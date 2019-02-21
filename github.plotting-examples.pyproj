@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b1ea8484-e4f9-4b1d-8908-e914fe26d23f}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>line_plot\line_plot.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="3D-scatter\scatter_3D.py" />
+    <Compile Include="animated_gif\animated_gif.py" />
+    <Compile Include="contourf_non_gridded\contourf_non_gridded.py" />
+    <Compile Include="contour_surf\contour_surf.py" />
+    <Compile Include="dual_axis\dual_axis_manual.py" />
+    <Compile Include="dual_axis\dual_axis_twinx.py" />
+    <Compile Include="fill_between\fill_between.py" />
+    <Compile Include="histogram_and_cdf\histogram_and_cdf.py" />
+    <Compile Include="imagesc_plot\imagesc_plot.py" />
+    <Compile Include="line_plot\line_plot.py" />
+    <Compile Include="line_plot\line_plot_pkt.py" />
+    <Compile Include="parallel_coordinate\parallel_coordinate.py" />
+    <Compile Include="scatter_plot\scatter_plot.py" />
+    <Compile Include="stacked_area\stacked_area.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="animated_gif\sinewave.gif" />
+    <Content Include="example_data\column_data.txt" />
+    <Content Include="example_data\five_obj_data.txt" />
+    <Content Include="example_data\gridded_2D.txt" />
+    <Content Include="example_data\non_gridded_2D.txt" />
+    <Content Include="example_images\animated_sinewave.gif" />
+    <Content Include="example_images\contourf_non_gridded.png" />
+    <Content Include="example_images\contour_surf.png" />
+    <Content Include="example_images\dual_axis.png" />
+    <Content Include="example_images\fill_between.png" />
+    <Content Include="example_images\histogram_and_cdf.png" />
+    <Content Include="example_images\imagesc_plot.png" />
+    <Content Include="example_images\line_plot.png" />
+    <Content Include="example_images\parallel_coordinate.png" />
+    <Content Include="example_images\R_images\R_contourf_non_gridded.png" />
+    <Content Include="example_images\R_images\R_contour_surf.png" />
+    <Content Include="example_images\R_images\R_dual_axis.png" />
+    <Content Include="example_images\R_images\R_fill_between.png" />
+    <Content Include="example_images\R_images\R_histogram_and_cdf.png" />
+    <Content Include="example_images\R_images\R_imagesc_plot.png" />
+    <Content Include="example_images\R_images\R_line_plot.png" />
+    <Content Include="example_images\R_images\R_parallel_coordinate.png" />
+    <Content Include="example_images\R_images\R_Scatter_Plot.png" />
+    <Content Include="example_images\R_images\R_stacked_area.png" />
+    <Content Include="example_images\R_images\scatter3d_plot.png" />
+    <Content Include="example_images\R_images\sinewave.gif" />
+    <Content Include="example_images\scatter_plot.png" />
+    <Content Include="example_images\scatter_plot_3d.png" />
+    <Content Include="example_images\stacked_area.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="3D-scatter" />
+    <Folder Include="animated_gif" />
+    <Folder Include="contourf_non_gridded" />
+    <Folder Include="contour_surf" />
+    <Folder Include="dual_axis" />
+    <Folder Include="example_data" />
+    <Folder Include="example_images" />
+    <Folder Include="example_images\R_images" />
+    <Folder Include="fill_between" />
+    <Folder Include="histogram_and_cdf" />
+    <Folder Include="imagesc_plot" />
+    <Folder Include="line_plot" />
+    <Folder Include="parallel_coordinate" />
+    <Folder Include="scatter_plot" />
+    <Folder Include="stacked_area" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
